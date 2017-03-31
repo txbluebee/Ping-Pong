@@ -2,7 +2,10 @@ $(document).ready(function(){
 
   /****Business Logic****/
    function pingpong(number) {
-//1. Verify if the user input is number or text.
+//Verify if the user input is number or text.
+
+
+
 
 
 
@@ -43,9 +46,10 @@ $(document).ready(function(){
     event.preventDefault();
     var userInput = $("#input").val();
     userInput = parseInt(userInput);
-    console.log(userInput);
-
-    pingpong(userInput);
-
+    if (userInput) {
+      pingpong(userInput);
+    } else {
+      alert("Please enter a number");
+    }
   });
 });
