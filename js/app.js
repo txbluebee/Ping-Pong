@@ -11,15 +11,15 @@ $(document).ready(function(){
     for (var i=0; i <numberArray.length; i++) {
     //numbers divisible by 3 & 5, replaced it with "ping-pong"
       if (numberArray[i]%3 === 0 && numberArray[i]%5 === 0 ) {
-        numberArray[i] = "pingpong";
+        numberArray[i] = "Ping-Pong";
       }
     //numbers divisible by 3, replaced it with "ping"
       if (numberArray[i]%3 === 0 ) {
-        numberArray[i] = "ping";
+        numberArray[i] = "Ping";
       }
     //numbers divisible by 5, replaced it with "pong"
       if (numberArray[i]%5 === 0 ) {
-        numberArray[i] = "pong";
+        numberArray[i] = "Pong";
       }
     }
     //Loop through array and append it under unorder list
@@ -36,7 +36,9 @@ $(document).ready(function(){
     userInput = parseInt(userInput);
     var result = pingpong(userInput);
     if (userInput) {
+      $("span.number").text(userInput);
       $("#result").show(result);
+      $("#input").val(" ");
     } else {
       alert("Please enter a number");
     }

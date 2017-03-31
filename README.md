@@ -38,14 +38,14 @@ Ping-Pong is a web application that takes a number from a user and returns a ran
 .
 * Loop through array to find numbers are divisible by 3 and 5 and then replaced it with "pongpong"
   * Example input: 15
-  * Example output: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,"pingpong"]
+  * Example output: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,"Ping-Pong"]
 
 * Loop through array and append it under unorder list.
-  * Example input: [1,2,"ping"]
+  * Example input: [1,2,"Ping"]
   * Example output:
     * 1
     * 2
-    * ping
+    * Ping
 
 
 ## Technology Used
