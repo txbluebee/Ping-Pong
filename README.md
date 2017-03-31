@@ -2,7 +2,7 @@ Specifications
 
 * It can verify if the user input is number or text.
   * Example input: hello
-  * Example output: this is not a number. Please enter a number!
+  * Example output: Please enter a number!
 
 * Convert number into array
   * Example input: 8
