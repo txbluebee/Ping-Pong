@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 /****Business Logic****/
   function pingpong(number) {
-// Convert number into array
+// count up to the provided number and put them inside array
     var numberArray = [];
     for (var i=1; i<= number; i++) {
       numberArray.push(i);
@@ -35,6 +35,8 @@ $(document).ready(function(){
     var userInput = $("#input").val();
     userInput = parseInt(userInput);
     var result = pingpong(userInput);
+
+    //verify if the user input is number or text.
     if (userInput) {
       $("span.number").text(userInput);
       $("#result").show(result);
