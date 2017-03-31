@@ -23,20 +23,20 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-sm-4">
-        <h3>About Ping Pong</h3>
-        <h6>Creat by:</h6>
+      <div class="col-sm-4 pl-5">
+        <h2 class="mb-3">About Ping Pong</h2>
+        <h5>Creat by:</h5>
         <p>Brian Fan</p>
-        <h6>Github Username/URL: </h6>
+        <h5>Github Username/URL: </h5>
         <P>txbluebee</P>
-        <h6>Arrays & Looping Project for: </h6>
+        <h5>Arrays & Looping Project for: </h5>
         <p>JavaScript</p>
       </div>
       <div class="col-sm-1">
 
       </div>
-      <div class="col-sm-6">
-        <h2>Let's Play!</h2>
+      <div class="col-sm-6 pl-5">
+        <h2 class="mb-3">Let's Play!</h2>
         <h5>Rules</h5>
         <p>Ping Pong will count up to your number from 1 with the following exceptions:</p>
         <ol>
@@ -45,14 +45,14 @@
           <li>Numbers divided by 3 and 5 become "Ping-Pong"</li>
         </ol>
         <form id="pingpong">
-         <div>
-           <label for "input">Enter your number here: </label>
-           <input id="input" type="text"><br>
+         <div class="form-group mb-0">
+           <label for "input"><b>Enter your number here:</b></label>
+           <input id="input" type="text" class="form-control"><br>
          </div>
-         <button type="submit">Ping Pong!</button>
+         <button type="submit" class="btn btn-outline-primary">Ping Pong!</button>
         </form>
         <div id="result">
-          <h4>Numbers: <span class="number"></span></h4>
+          <h4 class="mt-4">Numbers: <span class="number"></span></h4>
           <h5>Result: </h5>
           <ul id="list"></ul>
         </div>
